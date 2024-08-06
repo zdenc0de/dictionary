@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #47338afb;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #47338afb;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90vw;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 50%;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.caja-busqueda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.caja-busqueda input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #47338afb;
+    font-size: 16px;
+}
+
+.caja-busqueda button {
+    padding: 10px;
+    background-color: #47338afb;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.resultado {
+    position: relative;
+    margin-top: 20px;
+}
+
+.resultado h3 {
+    font-size: 30px;
+    color: black;
+}
+
+.resultado .palabra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resultado button {
+    background-color: transparent;
+    color: #47338afb;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.resultado .detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+}
+
+.significado {
+    color: #575a7b;
+    font-size: 18px;
+}
+
+.ejemplo {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #47338afb;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.error {
+    margin-top: 40px;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+footer{
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container {
+        padding: 60px 40px;
+    }
+
+    .caja-busqueda {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .caja-busqueda input {
+        width: 70%;
+    }
+
+    .caja-busqueda button {
+        width: 25%;
+    }
+
+    .resultado h3 {
+        font-size: 40px;
+    }
+
+    .resultado .detalles {
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .significado,
+    .ejemplo {
+        font-size: 20px;
+    }
+}
