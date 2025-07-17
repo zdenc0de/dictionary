@@ -1,2 +1,2 @@
-# diccionario-js
-Diccionario del idioma Inglés
+# Dictionary
+English Dictionary, made in JavaScript
