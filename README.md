@@ -1,2 +1,2 @@
 # Dictionary
-English Dictionary, made in JavaScript
+English Dictionary, made with JavaScript
